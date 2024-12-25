@@ -2,8 +2,12 @@
 {
     public class User
     {
-        public string Name { get; set; }
         public int PlayerNumber { get; set; }
-        public int Score { get; set; }
+        public List <Score> { get; set; } = new List<Score>();
+    }
+
+    public class Score
+    {
+        public int ScorePoint { get; set; }
     }
 }
